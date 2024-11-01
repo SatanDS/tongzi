@@ -110,15 +110,15 @@ static void loadPrefs() {
 - (CGRect)getBadgePosByFrame:(CGRect)destFrame {
 	if (@available(iOS 16.0, *)) {
 		if (isRTL) {
-			return CGRectMake(destFrame.origin.x-3, destFrame.origin.y-13, ngcBadgeSize, ngcBadgeSize);
+			return CGRectMake(destFrame.origin.x+2, destFrame.origin.y-13, ngcBadgeSize, ngcBadgeSize);
 		} else {
-			return CGRectMake(destFrame.size.width-3, destFrame.origin.y-13, ngcBadgeSize, ngcBadgeSize);
+			return CGRectMake(destFrame.size.width+2, destFrame.origin.y-13, ngcBadgeSize, ngcBadgeSize);
 		}
 	} else {
 		if (isRTL) {
-			return CGRectMake(destFrame.origin.x-10, destFrame.origin.y-9, ngcBadgeSize, ngcBadgeSize);
+			return CGRectMake(destFrame.origin.x-8, destFrame.origin.y-9, ngcBadgeSize, ngcBadgeSize);
 		} else {
-			return CGRectMake(destFrame.size.width-10, destFrame.origin.y-9, ngcBadgeSize, ngcBadgeSize);
+			return CGRectMake(destFrame.size.width-8, destFrame.origin.y-9, ngcBadgeSize, ngcBadgeSize);
 		}
 	}
 }
