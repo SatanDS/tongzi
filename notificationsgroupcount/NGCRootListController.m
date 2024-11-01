@@ -33,7 +33,7 @@
 		underLabel = [[UILabel alloc] initWithFrame:botFrame];
 		[underLabel setNumberOfLines:4];
 		underLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:14];
-		[underLabel setText:@"\统计消息通知数量\n\n 创建者： 0xkuj 汉化： 渡生"];
+		[underLabel setText:@"\n统计消息通知数量\n\n 创建者： 0xkuj 汉化: 渡生"];
 		[underLabel setBackgroundColor:[UIColor clearColor]];
 		underLabel.textColor = [UIColor grayColor];
 		underLabel.textAlignment = NSTextAlignmentCenter;
