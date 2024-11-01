@@ -8,7 +8,7 @@ include $(THEOS)/makefiles/common.mk
 TWEAK_NAME = NotificationsGroupCount
 
 NotificationsGroupCount_FILES = Tweak.xm NGCBadgeView.m
-NotificationsGroupCount_CFLAGS = -fobjc-arc
+NotificationsGroupCount_CFLAGS = -fobjc-arc -fno-constant-cfstrings -Wno-unknown-escape-sequence -Wno-invalid-source-encoding
 include $(THEOS_MAKE_PATH)/tweak.mk
 SUBPROJECTS += notificationsgroupcount
 include $(THEOS_MAKE_PATH)/aggregate.mk
