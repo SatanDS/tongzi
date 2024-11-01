@@ -25,7 +25,7 @@
 		_label = [[UILabel alloc] initWithFrame:frame];
 		[_label setNumberOfLines:1];
 		_label.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:35];
-		[_label setText:@"Notifications Group Count"];
+		[_label setText:@"锁屏消息统计角标"];
 		[_label setBackgroundColor:[UIColor clearColor]];
 		_label.textAlignment = NSTextAlignmentCenter;
 		_label.alpha = 0;
@@ -33,7 +33,7 @@
 		underLabel = [[UILabel alloc] initWithFrame:botFrame];
 		[underLabel setNumberOfLines:4];
 		underLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:14];
-		[underLabel setText:@"\nCount Those Notifications Groups!\n\n Created by 0xkuj"];
+		[underLabel setText:@"\统计消息通知数量\n\n 创建者： 0xkuj 汉化： 渡生"];
 		[underLabel setBackgroundColor:[UIColor clearColor]];
 		underLabel.textColor = [UIColor grayColor];
 		underLabel.textAlignment = NSTextAlignmentCenter;
@@ -151,18 +151,18 @@
 
 /* default settings and repsring right after. files to be deleted are specified in this function */
 -(void)defaultsettings:(PSSpecifier*)specifier {
-	UIAlertController* alertController = [UIAlertController alertControllerWithTitle:@"Confirmation"
-    									                    message:@"This will restore NotificationsGroupCount Settings to default\nAre you sure?" 
+	UIAlertController* alertController = [UIAlertController alertControllerWithTitle:@"确认"
+    									                    message:@"将设置恢复为默认值\n你确定吗?" 
     														preferredStyle:UIAlertControllerStyleAlert];
 	/* prepare function for "yes" button */
 	UIAlertAction* OKAction = [UIAlertAction actionWithTitle:@"Yes" style:UIAlertActionStyleDefault
     		handler:^(UIAlertAction * action) {
 				[[NSFileManager defaultManager] removeItemAtURL: [NSURL fileURLWithPath:GENERAL_PREFS] error: nil];
     			[self reload];
-				UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Notice"
-				message:@"Settings restored to default\nPlease respring your device" 
+				UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"注意"
+				message:@"设置将恢复为默认值\n请注销您的设备" 
 				preferredStyle:UIAlertControllerStyleAlert];
-				UIAlertAction* DoneAction =  [UIAlertAction actionWithTitle:@"Respring" style:UIAlertActionStyleDefault
+				UIAlertAction* DoneAction =  [UIAlertAction actionWithTitle:@"注销" style:UIAlertActionStyleDefault
     			handler:^(UIAlertAction * action) {
 					[self respring:nil];
 				}];
