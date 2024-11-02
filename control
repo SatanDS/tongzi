@@ -1,10 +1,11 @@
 Package: com.0xkuj.notificationsgroupcount
 Name: 锁屏消息统计角标
-Version: 1.0.2
+Version: 1.0.4
 Architecture: iphoneos-arm
 Description: Count those notifications inside Apple notifications grouping!
 Maintainer: 渡生
 Author: 0xkuj
 Section: ios18功能专区
 Depends: mobilesubstrate (>= 0.9.5000)
+Icon: https://raw.githubusercontent.com/SatanDS/dusheng.githyb.io/refs/heads/main/images/notificationsgroupcount/C6FDFA29-5528-4A62-9C3F-D70BC633386C.png
 SileoDepiction: https://raw.githubusercontent.com/SatanDS/dusheng.githyb.io/refs/heads/main/Depictions/notificationsgroupcount/1.json
